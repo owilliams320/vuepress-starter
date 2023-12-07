@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #333a3e;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.header-utility {
+  background: #f6f7fb;
+  color: #00233c;
+  font-size: .75rem;
+  line-height: 1rem;
+  min-height: 28px;
+  align-items: center;
+  display: flex;
+}
+
+.header-utility .container-wide {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.header-utility ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-utility a {
+  text-decoration: none;
+  position: relative;
+  background-image: linear-gradient(#00233c,#00233c);
+  background-image: webkit-linear-gradient(#00233c,#00233c);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition: all .25s ease-in-out 0s;
+  color: #00233c;
+}
+
+.header-utility a:hover {
+  background-size: 100% 1px;
+}
+
+.container-wide {
+  padding: 0 6.625rem;
+  margin: auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.header-nav-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 101;
+}
+
+.header-nav nav {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.header-nav .teradata-logo {
+  /* width: 142.9px;
+  height: 26.67px; */
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.header-nav a {
+  text-decoration: none;
+}
+
+.header-nav .header-nav__element {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+}
+
+.header-nav__logo-text {
+  font-size: 22px;
+  color: #00233c;
+  letter-spacing: 0.15px;
+  margin-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header-nav__main-menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding: 0 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-nav__actions {
+  justify-content: flex-end;
+}
+.header-nav__actions *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+
+
+.header-nav-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container-wide {
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container-wide {
+    padding: 0 6.625rem;
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+
