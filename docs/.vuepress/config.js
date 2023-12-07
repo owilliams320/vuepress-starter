@@ -7,6 +7,7 @@ export default defineUserConfig({
   lang: 'en-US',
   title: 'Hello Teradata AI Unlimited',
   description: 'Just playing around',
+  base: 'vuepress-starter',
   // head: [
   //   'link',
   //   {
